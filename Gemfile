@@ -26,6 +26,19 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+#Custom Gems intalled by ADMIN
+gem 'devise'
+
+gem "paperclip", "~> 4.1"
+
+# gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+
+gem 'bootstrap-sass', '~> 3.1.1'
+
+# gem 'mail'
+
+gem 'mailcatcher'
+
 # Confuguration for Heroku Deployement
 	#Start
 		group :production do
