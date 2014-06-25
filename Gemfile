@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -41,8 +41,14 @@ gem 'mailcatcher'
 
 # Confuguration for Heroku Deployement
 	#Start
-		
+		group :production do
 			gem 'pg'
+			gem 'rails_12factor'
+			
+		end
+		group :development, :test do
+			gem 'sqlite3'	
+		end
 
 	#End
 
